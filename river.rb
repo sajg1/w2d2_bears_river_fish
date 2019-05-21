@@ -12,6 +12,8 @@ class River
     return @fish.count
   end
 
-
+  def add_fish_to_river(fish)
+    @fish << fish
+  end
 
 end

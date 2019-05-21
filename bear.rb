@@ -12,4 +12,10 @@ class Bear
     return @fish_in_stomach.count
   end
 
+  def eat_fish(river, fish)
+    if river.fish_in_river >= 1
+      @fish_in_stomach << fish
+    end
+  end
+
 end

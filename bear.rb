@@ -19,4 +19,12 @@ class Bear
     end
   end
 
+  def bear_roar(bear, river, fish)
+    if (bear.eat_fish(river, fish) == true)
+      return "RAWR!!!"
+    else
+      return "AWWW!!!"
+    end
+  end
+
 end

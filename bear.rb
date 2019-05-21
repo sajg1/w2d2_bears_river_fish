@@ -15,6 +15,7 @@ class Bear
   def eat_fish(river, fish)
     if river.fish_in_river >= 1
       @fish_in_stomach << fish
+      river.remove_fish(fish)
     end
   end
 

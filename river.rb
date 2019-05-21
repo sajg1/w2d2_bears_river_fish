@@ -16,4 +16,9 @@ class River
     @fish << fish
   end
 
+  def remove_fish(fish)
+    index = @fish.index(fish)
+    @fish.slice!(index, 1)
+  end
+
 end
